@@ -1,0 +1,44 @@
+#city{
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+#s{
+    background-color: #e0f7fa;
+    border: 1px solid #b2ebf2;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+#j{
+    background-color: #fff3e0;
+    border: 1px solid #ffe0b2;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+#k{
+    background-color: #fce4ec;
+    border: 1px solid #f8bbd0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+#s, #j, #k {
+    overflow: auto;
+}
+#aruv {
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    float: right;
+}
+#arub {
+    
+    margin: x;
+    height: 100px;
+    width: 140px;
+    float: right;
+}
