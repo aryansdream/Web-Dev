@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Home | My Project</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #0078d7; color: #fff; padding: 1rem; text-align: center; }
+        nav { background: #f4f4f4; padding: 0.5rem; text-align: center; }
+        nav a { margin: 0 1rem; color: #0078d7; text-decoration: none; font-weight: bold; }
+        main { padding: 2rem; }
+        footer { background: #222; color: #fff; text-align: center; padding: 1rem; position: fixed; width: 100%; bottom: 0; }
+
+        /* Responsive styles */
+        @media (max-width: 700px) {
+            main { padding: 1rem; }
+            nav { font-size: 1rem; }
+            nav a { display: inline-block; margin: 0.5rem 0.5rem; }
+            ul { padding-left: 1.2rem; }
+            footer { font-size: 0.95rem; }
+        }
+        @media (max-width: 500px) {
+            header h1 { font-size: 1.3rem; }
+            main { padding: 0.5rem; }
+            nav { font-size: 0.95rem; }
+            nav a { margin: 0.3rem 0.2rem; font-size: 0.98rem; }
+            ul { font-size: 0.98rem; }
+            section h3 { font-size: 1.1rem; }
+            footer { font-size: 0.9rem; padding: 0.7rem; }
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .nav-btn {
+            display: inline-block;
+            background: #0078d7;
+            color: #fff !important;
+            border: none;
+            border-radius: 4px;
+            padding: 0.32rem 0.85rem;
+            font-weight: 500;
+            font-size: 0.97rem;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+            cursor: pointer;
+            margin: 0.12rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+        .nav-btn:hover, .nav-btn.active {
+            background: #0056b3;
+            color: #fff !important;
+        }
+        @media (max-width: 700px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 0.18rem;
+            }
+            .nav-btn {
+                width: 96%;
+                text-align: center;
+                font-size: 1rem;
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="styleI.css">
+</head>
+<body>
+    <header>
+        <h1> BookYourHostel!</h1>
+    </header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="color:#0078d7; font-weight:bold; font-size:1.2rem; text-decoration:none;">BookYourHostel</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="login.html" class="nav-btn">Login</a>
+                <a href="register.php" class="nav-btn">Sign-up</a>
+                <a href="about.html" class="nav-btn">About</a>
+                <a href="contact.html" class="nav-btn">Contact</a>
+                <a href="admin-login.php" class="nav-btn">Admin Login</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h2>Welcome to BookYourHostel</h2>
+        <p>
+            BookYourHostel is your one-stop solution for finding and booking the best hostels in your city. Whether you are a student, traveler, or working professional, we make it easy to discover, compare, and reserve your perfect stay.
+        </p>
+        <section style="margin-top:2rem;">
+            <h3>Why Choose Us?</h3>
+            <ul style="text-align:left; max-width:600px; margin:0 auto;">
+                <li>Wide selection of hostels with detailed information</li>
+                <li>Easy and secure online booking</li>
+                <li>Verified reviews from real guests</li>
+                <li>24/7 customer support</li>
+            </ul>
+        </section>
+        <section style="margin-top:2rem;">
+            <h3>Get Started</h3>
+            <p>
+                <a href="register.php" style="background:#0078d7; color:#fff; padding:0.5rem 1.5rem; border-radius:4px; text-decoration:none; font-weight:bold;">Sign Up</a>
+                or
+                <a href="login.html" style="color:#0078d7; font-weight:bold;">Login</a>
+                to book your hostel today!
+            </p>
+        </section>
+        <section style="margin-top:2rem;">
+            <h3>Contact Us</h3>
+            <p>
+                Have questions? <a href="contact.html" style="color:#0078d7;">Contact our team</a> and we’ll be happy to help.
+            </p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Aryan's Project. All rights reserved.
+    </footer>
+</body>
+</html>
